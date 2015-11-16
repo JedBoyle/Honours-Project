@@ -271,10 +271,9 @@ def remove_electrons(data_processor):
 
 if __name__ == "__main__":
 
-    #reduce("smear40summation.csv")
+    
 
     data_p = DataProcessor('BaseData.txt')
-    #print data_p.count('PION')
     #remove_electrons(data_p)
     count = 0
     while (not data_p.is_empty()):
@@ -282,16 +281,8 @@ if __name__ == "__main__":
 
         if particle.too_big():
             continue
-        #print particle.func()
-        if particle.particle_id == 1:
-            count += 1
-    #    print particle.smeared_summation(0.2)
-        #print particle.ordered_column_weighted_summation(weights12)
-        #print particle.ordered_column_weighted_summation(weights13)
-        #print particle.ordered_column_weighted_summation(weights14)
-    #    print particle.smeared_summation(0.01)
-
-        #break
+        
+        
 
 
     print count
